@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/crearLista">
+    <fragment
+        android:id="@+id/crearLista"
+        android:name="com.example.lista_de_compras.Fragments.CrearLista"
+        android:label="CrearLista" >
+        <action
+            android:id="@+id/action_crearLista_to_ordenarListas3"
+            app:destination="@id/ordenarListas" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordenarListas"
+        android:name="com.example.lista_de_compras.Fragments.OrdenarListas"
+        android:label="OrdenarListas" />
+</navigation>
